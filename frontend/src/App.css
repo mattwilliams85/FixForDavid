@@ -1,0 +1,388 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Global container for home pages */
+.home-container {
+  padding-top: 60px; /* space for fixed header */
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+/* Header and Nav Bar */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #0056b3;
+}
+
+.nav-button.active {
+  background-color: white;
+  color: #0056b3;
+}
+
+/* Main Content Area */
+.content {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Tables */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Forms */
+.form-container {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-select,
+.problem-input,
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-select:focus,
+.problem-input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Buttons */
+.form-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background-color: #003f7f;
+}
+
+.form-button.secondary {
+  background-color: #6c757d;
+}
+
+.form-button.secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Action Buttons (for assigning/unassigning/resolving) */
+.resolve-button,
+.unresolve-button,
+.action-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+  margin-left: 5px;
+}
+
+.resolve-button {
+  background-color: #28a745;
+}
+
+.resolve-button:hover {
+  background-color: #218838;
+}
+
+.unresolve-button {
+  background-color: #ffc107;
+}
+
+.unresolve-button:hover {
+  background-color: #e0a800;
+}
+
+.action-button {
+  background-color: #0056b3;
+}
+
+.action-button:hover {
+  background-color: #003f7f;
+}
+
+/* Messages and Logos */
+.form-message {
+  margin-top: 15px;
+  text-align: center;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.login-logo {
+  width: 160px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.modal-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .form-button,
+  .nav-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* matches the global background */
+}
+
+/* Adjusting spacing in the form */
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-group .form-input,
+.form-group .form-select {
+  width: 100%;
+}
+
+.link-button {
+  background: #0056b3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0;
+}
+
+.link-button:hover {
+  background: #003f7f;
+  box-shadow: none;
+}
+
+/* Ensure consistent look for buttons in forms */
+.form-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+}
+
+.form-button:hover {
+  background-color: #003f7f;
+}
+
+/* Secondary button style matches the general theme without gradient or heavy shadows */
+.form-button.secondary {
+  background-color: #6c757d;
+}
+
+.form-button.secondary:hover {
+  background-color: #5a6268;
+}
+
+.toast-container:hover .Toastify__toast {
+  pointer-events: none;
+  opacity: 0.5; 
+}
+
+.toast-container .Toastify__close-button {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none; 
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1270px) {
+  .nav {
+    display: none; /* initially hide nav on small screens */
+    flex-direction: column;
+    background-color: #0056b3;
+    position: absolute;
+    top: 60px; /* below the header */
+    left: 0;
+    right: 0;
+  }
+
+  .nav.expanded {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block; /* show hamburger on small screens */
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: left;
+    border: none; /* remove border for dropdown styling */
+    border-bottom: 1px solid #ffffff55; /* subtle divider between options */
+  }
+}

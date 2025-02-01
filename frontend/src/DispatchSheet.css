@@ -1,0 +1,184 @@
+.ag-cell .ag-header-cell,
+.ag-theme-alpine .ag-header-group-cell {
+  padding-left: 4px !important;
+  padding-right: 0px !important;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.ag-cell-data-changed {
+  --ag-value-change-value-highlight-background-color: #00ff804e !important;
+}
+
+.ag-center-cols-viewport {
+  min-height: 0px !important;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  border: none !important;
+}
+
+.MuiBox-root {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  min-height: 0px !important;
+}
+
+.MuiToolbar-root {
+  min-height: 0px !important;
+}
+
+.main-day-grid .ag-header {
+  border-top: 1px solid black !important;
+  background-color: rgb(247, 247, 247) !important;
+  font-size: '13px';
+}
+
+/* DispatchSheet.css */
+
+.ag-font-style {
+  user-select: initial;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+}
+
+.ag-theme-alpine.no-header-day-grid.MuiBox-root {
+  height: 100%;
+}
+
+.content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.ag-hidden {
+  height: 0px !important;
+}
+
+.ag-row-pinned {
+  background-color: #f8f8f8 !important;
+}
+
+.ag-theme-alpine .ag-cell-inline-editing {
+  padding: 0px !important;
+  margin: 0 !important;
+}
+
+.ag-theme-alpine .ag-row {
+  height: 20px !important;
+  /* Force the row height */
+}
+
+.ag-theme-alpine .ag-cell {
+  font-size: 13px !important;
+  /* Ensure text size is 11px */
+}
+
+.ag-theme-alpine .ag-cell-inline-editing .ag-cell-edit-input {
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box;
+}
+
+.MuiTab-root {
+  border-left: 1px solid rgb(200, 200, 200) !important;
+  border-right: 1px solid rgb(200, 200, 200) !important;
+}
+
+.MuiTabScrollButton-root {
+  border-left: 2px solid rgb(200, 200, 200) !important;
+  border-right: 2px solid rgb(200, 200, 200) !important;
+}
+
+.MuiTabs-scrollButtons.Mui-disabled {
+  border-left: 2px solid rgb(200, 200, 200) !important;
+  border-right: 2px solid rgb(200, 200, 200) !important;
+  opacity: 0.6 !important;
+}
+
+.MuiIconButton-root {
+  margin-left: 0px !important;
+}
+
+.ag-theme-alpine .ag-cell,
+.ag-theme-alpine .ag-row,
+.ag-theme-alpine .ag-cell-value {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ag-theme-alpine .ag-input-field-input,
+.ag-theme-alpine .ag-text-field-input,
+.ag-theme-alpine .ag-cell-edit-wrapper {
+  top: 0px;
+  height: 20px !important;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-left: 0px !important;
+}
+
+.ag-cell-wrapper {
+  height: 20px !important;
+}
+
+.ag-has-focus .ag-cell-focus {
+  border-right: 3px solid black !important;
+  border-left: 3px solid black !important;
+  height: 20px !important;
+}
+
+.ag-floating-top-viewport {
+  justify-content: center !important;
+  top: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.ag-floating-top-container {
+  position: relative;
+  top: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.ag-floating-top {
+  height: 20px !important;
+  border-bottom: 0px !important;
+}
+
+.ag-theme-quartz .ag-row .ag-cell {
+  display: flex;
+  height: 20px !important;
+  align-items: center;
+}
+
+.ag-theme-alpine .ag-row .ag-cell {
+  display: flex;
+  height: 20px !important;
+  align-items: center;
+}
+
+.ag-theme-alpine .ag-row {
+  height: 20px !important;
+}
+
+.ag-theme-alpine .ag-cell {
+  height: 20px !important;
+}
+
+.ag-cell-wrapper {
+  height: 100%;
+}
+
+/* Force rows/cells to allow overflow */
+.ag-theme-alpine .ag-row,
+.ag-theme-alpine .ag-cell {
+  overflow: visible !important;
+}
+
+.ag-picker-expanded {
+  width: 100px !important;
+}

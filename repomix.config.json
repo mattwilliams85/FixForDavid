@@ -1,0 +1,20 @@
+{
+  "output": {
+    "filePath": "repomix-output.txt",
+    "style": "plain",
+    "removeComments": false,
+    "removeEmptyLines": false,
+    "topFilesLength": 5,
+    "showLineNumbers": false,
+    "copyToClipboard": false
+  },
+  "include": ["backend/", "frontend/"],
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": ["node_modules/", "venv/", "**/*.log"]
+  },
+  "security": {
+    "enableSecurityCheck": true
+  }
+}
