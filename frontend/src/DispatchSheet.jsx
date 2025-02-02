@@ -1,6 +1,6 @@
 import React, {
   useState,
-  useMemo,
+  useMemo
 } from 'react';
 import {
   Box,
@@ -131,6 +131,7 @@ const DaySection = React.memo(function DaySection({
             justifyContent: 'center',
             cursor: 'pointer',
             borderRight: '1px solid gray',
+            background: 'white'
           }}
         >
           <Typography
@@ -264,9 +265,7 @@ const DispatchSheet = () => {
   const finalDays = [0, 1, 2, 3, 4, 5, 6];
 
   return (
-    <Box sx={{
-      height: 'calc(100vh + 208px)',
-    }}>
+    <Box>
       <Box
         sx={{
           width: '100%',
@@ -385,6 +384,7 @@ const DispatchSheet = () => {
             zIndex: 999,
             display: 'flex',
             backgroundColor: 'white !important',
+            paddingTop: '60px'
           }}>
             <Box sx={{
               width: '49px',
@@ -451,20 +451,22 @@ const DispatchSheet = () => {
             </Box>
           </Box>
         </Box>
-        <Box sx={{ paddingBottom: '300px' }}>
-          {finalDays.map(() => {
-            return (
-              <DaySection
-                driversColumnDefs={driversColumnDefs}
-                inboundColumnDefs={inboundColumnDefs}
-                outboundColumnDefs={outboundColumnDefs}
-                defaultColDef={defaultColDef}
-                theme={theme}
-              />
-            )
-          }
-          )}
-        </Box>
+        <div className='fixed-scroll'>
+          <Box sx={{ paddingBottom: '300px' }}>
+            {finalDays.map(() => {
+              return (
+                <DaySection
+                  driversColumnDefs={driversColumnDefs}
+                  inboundColumnDefs={inboundColumnDefs}
+                  outboundColumnDefs={outboundColumnDefs}
+                  defaultColDef={defaultColDef}
+                  theme={theme}
+                />
+              )
+            }
+            )}
+          </Box>
+        </div>
 
         <Box
           sx={{
